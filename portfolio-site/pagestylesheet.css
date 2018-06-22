@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 1px;
+    margin: 5px 5px 0 5px;  
+}
+.headBack{
+  background:black;
+  padding:3px;
+  margin:2px;  
+}
+.headTitle{
+    font-family: Helvetica, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10px;
+    border-style:solid;
+    background: grey;
+}
+.topNav{
+  background-color: grey;
+  overflow:hidden;
+}
+.topNav a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: bold;
+}
+.topNav a:hover{
+  background-color: hotpink;
+}
+.topNav a.active{
+  color: red;
+  background-color: black;
+}
+.topNav ul{
+  list-style:none;
+  text-align:center;
+  padding: 0;
+  margin: 0;
+}
+.topNav li {
+  font-family: Helvetica, sans-serif;
+  display:inline-block;
+  line-height:30px;
+  height:30px;
+}
+.topNav a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.topHeader{
+  text-align:center;
+  background:grey;
+  font-family:Helvetica, sans-serif;
+  color: white;
+}
+.clearfix::after{
+    clear:both;
+    content: '';
+    display: block;
+}
+.mainContainer{
+  padding:2px;
+  margin:0px;
+  background:grey;
+}
+.subContainer{
+  background:red;
+}
+.textContainer{
+  background:grey;
+  float: right;
+	margin-right: 2%;
+	padding: 1rem;
+	width: 32%;
+}

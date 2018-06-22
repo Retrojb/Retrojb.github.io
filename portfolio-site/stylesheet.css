@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 10;
+    margin: 10;
+}
+
+header h1{
+    float: right;
+    padding-right: 1rem;
+}
+header nav{
+    float: left;
+    padding-left: 1rem;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+}
+.clearfix{
+    clear:both;
+    content: '';
+    display: block;
+}
+.aboutme {
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    border-color: indigo;
+    background-color: rgb(18, 236, 116);
+    border-radius: 0 5px 0 50px;
+    float: left;
+    
+}
+.maintitle{
+    text-align: center;
+    align-content: center;
+    border-style: double;
+    border-width: 8px;
+    border-color: indigo;
+}
+
+.clearfix::after{
+    clear:both;
+    content: '';
+    display: block;
+}
