@@ -80,3 +80,13 @@
 	padding: 1rem;
 	width: 32%;
 }
+.aboutme {
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  border-color: indigo;
+  background-color: rgb(18, 236, 116);
+  border-radius: 0 5px 0 50px;
+  float: left;
+  
+}
