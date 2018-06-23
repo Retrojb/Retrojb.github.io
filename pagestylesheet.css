@@ -1,32 +1,55 @@
 *{
     box-sizing: border-box;
-    padding: 1px;
-    margin: 5px 5px 0 5px;  
+    padding: 0;
+    margin: 0;  
+    
+}
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+header{
+  border-radius: 1rem;
+  padding: .4rem;
+  background-image: url("./images/city.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: .2rem;
+}
+body{
+  background-color: rgb(66, 65, 65);
 }
 .headBack{
   background:black;
-  padding:3px;
-  margin:2px;  
+  border-radius: 1rem;
+  padding:0.5rem;
+  margin:4px;  
 }
 .headTitle{
     font-family: Helvetica, sans-serif;
     color: #f2f2f2;
     text-align: center;
     padding: 8px 10px;
-    border-style:solid;
+    border-radius: 1rem;
     background: grey;
 }
 .topNav{
-  background-color: grey;
+  
   overflow:hidden;
+  border-radius: 1rem;
+}
+.topNavImg{
+  width: 20%;
+  height:auto;
 }
 .topNav a{
-    color: #f2f2f2;
+    color: #0e0101;
     text-align: center;
-    padding: 8px 10px;
+    padding: .3rem;
+    margin: 0;
     text-decoration: none;
     font-size: 20px;
     font-style: bold;
+    list-style-type:none;
 }
 .topNav a:hover{
   background-color: hotpink;
@@ -53,12 +76,17 @@
   display: block;
   transition: .3s background-color;
 }
-
+.heroImg{
+  background-image: url("/image/city.jpg");
+ 
+  background-size: 80%;
+}
 .topHeader{
   text-align:center;
   background:grey;
   font-family:Helvetica, sans-serif;
   color: white;
+  border-radius: 1rem;
 }
 .clearfix::after{
     clear:both;
@@ -69,9 +97,70 @@
   padding:2px;
   margin:0px;
   background:grey;
+  border-radius: 1rem;
+  
 }
 .subContainer{
-  background:red;
+  margin:3rem;
+  float: left;
+  margin-right: 2%;
+  width: 25%;
+}
+.container{
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: .5rem;
+  margin-right: 2%;
+  display: grid;
+  padding: 1rem;
+  float: left;
+  background-color: white;
+  width:35%;
+}
+.containerTwo{
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: .5rem;
+  margin-right: 2%;
+  display: grid;
+  padding: 1rem;
+  float: right;
+  width:55%;
+  background-color: white;
+}
+.highlights{
+  margin: 2rem 0;
+}
+.highlights section{
+  float:left;
+  margin-right: 2%;
+  width:38%;
+  padding: .5rem;
+}
+.highlights div:last-child{
+  
+  margin-right: 0;
+  
+}
+figure{
+  margin: 0;
+  position: relative;
+}
+figure img{
+  width:100%
+}
+figure figcaption{
+  bottom: 0.3rem;
+  padding: 0.1rem;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-align: end
+}
+.images{
+  width: 20%;
+  height: auto;
 }
 .textContainer{
   background:grey;
