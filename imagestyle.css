@@ -1,0 +1,29 @@
+.hero{
+    width: 1000px;
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    }
+
+.box-hero{left: 50%;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    display: flex;
+    background-repeat: no-repeat;  
+}
+.poop{
+    border-style: solid;
+    margin-left:0;
+    margin-right: 0;
+    margin-bottom: 0;
+    height:1000px;
+    display: flex;
+    border-color: black;
+    border-width: 2px;
+}

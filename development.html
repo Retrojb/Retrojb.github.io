@@ -2,22 +2,41 @@
 <html>
     <head>
             <meta charset="utf-8">
-            <meta content="viewport" width=width-device>
+            <meta content="viewport" width="width-device">
             <link rel="page stylesheet" href="pagestylesheet.css"  />
             <link rel="navigation stylesheet" href="styles.css"  />
-            <title>Baltes Portfolio Home Page</title>
-    
+            <link rel="image stylesheet" href="imagestyle.css"    />
+            <title>Baltes Development</title>
     </head>
 
     <body> 
-        <header>          
-                <div class="imgContainer">
-                    <div class="innerContainer">
+        <header>
+          <div class="box-hero responsive" style="max-height:500px">        
+                    <img class="mySlides" src="images/mario2.jpg">
+                    <img class="mySlides" src="images/hereandgone.jpg">
+                    <img class="" src="images/cityofDayton.jpg" >
+                    <script>
+                      var slideIndex = 0;
+                        carousel();
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                              x[i].style.display = "none"; 
+                            }
+                            slideIndex++;
+                            if (slideIndex > x.length) {slideIndex = 1} 
+                            x[slideIndex-1].style.display = "block"; 
+                            setTimeout(carousel, 4000);
+                        }
+                      </script>
+                </div>
+                      <div class="innerContainer">
                         <h1>Baltes Design &amp Development</h1>
                                 <h3>Where science and art collide</h3>
                                 <h3 class="topHeader">Development: You can think it, you can build it</h3>
                               </div>
-                    <span class="checkbox-container clearfix">
+                        <span class="checkbox-container clearfix">
                             <input class="checkbox-trigger" type="checkbox"  />
                             <span class="menu-content clearfix">
                                 <ul>
@@ -29,18 +48,15 @@
                               <span class="hamburger-menu"></span>
                             </span>
                           </span>
-            </div> 
-         </header> 
-
-
-
+                      </div> 
+               </header> 
 
          <main class="headBack">  
-          <div class="mainContainer clearfix">
+          <div class="mainContainer">
              <h4 class="topHeader"> This project 1</h4>
                <section class="subContainer clearfix">
                  <div class="imagestylecart insideContainers">
-              <img src="images/social vulnerbil\ity.jpg" />         
+              <img src="images/social vulnerbility.jpg" />         
               <p class="textContainer clearfix"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
                  </div>     
                  
@@ -52,7 +68,7 @@
              <h4 class="topHeader"> This project 2</h4>
                <section class="subContainer clearfix">
                  <div class="imagestylecart insideContainers">
-              <img src="images/social vulnerb\ility.jpg" />         
+              <img src="images/social vulnerbility.jpg" />         
               <p class="textContainer clearfix"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
                  </div>                     
          </section>
@@ -60,7 +76,7 @@
              <h4 class="topHeader"> This project 3</h4>
                <section class="subContainer clearfix">
                  <div class="imagestylecart insideContainers">
-              <img src="images/social vulnerbi\lity.jpg" />         
+              <img src="images/social vulnerbility.jpg" />         
               <p class="textContainer clearfix"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
                  </div>                     
          </section>

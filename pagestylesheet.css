@@ -7,14 +7,7 @@
 html{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-.imgContainer{
-  background-image: url("./images/city.jpg");
-  height: 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 .innerContainer{
   margin-left: .5rem;
   float: right;
@@ -23,82 +16,7 @@ html{
   height: auto;
   margin-top: 18rem;
 }
-header{
-  border-radius: 1rem;
-  padding: .4rem;
- 
-  height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: .2rem;
-}
-body{
-  background-color: rgb(66, 65, 65);
-}
-.headBack{
-  background:black;
-  border-radius: 1rem;
-  padding:0.5rem;
-  margin:4px;  
-}
-.headTitle{
-    font-family: Helvetica, sans-serif;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 8px 10px;
-    border-radius: 1rem;
-    background: grey;
-}
-.topNav{
-  background-color: black;
-  overflow:hidden;
-}
-.topNavImg{
-  width: 20%;
-  height:auto;
-}
-.topNav a{
-    float:right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding:14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-}
-.topNav a:hover{
-  background-color: rgba(182, 182, 182, 0.644);
-}
-.topNav a.active{
-  color: rgba(161, 161, 161, 0.644);
-  background-color: black;
-}
-.topNav ul{
-  list-style:none;
-  text-align:center;
-  padding: 0;
-  margin: 0;
-}
-.topNav li {
-  font-family: Helvetica, sans-serif;
-  display:inline-block;
-  line-height:30px;
-  height:30px;
-}
-.topNav a{
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
-}
 
-.topHeader{
-  text-align:center;
-  background:grey;
-  font-family:Helvetica, sans-serif;
-  color: white;
-  border-radius: 1rem;
-}
 .clearfix::after{
     clear:both;
     content: '';
