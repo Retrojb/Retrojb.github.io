@@ -7,10 +7,27 @@
 html{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+.imgContainer{
+  background-image: url("./images/city.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.innerContainer{
+  margin-left: .5rem;
+  float: right;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 18rem;
+}
 header{
   border-radius: 1rem;
   padding: .4rem;
-  background-image: url("./images/city.jpg");
+ 
+  height: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
   margin: .2rem;
@@ -33,29 +50,27 @@ body{
     background: grey;
 }
 .topNav{
-  
+  background-color: black;
   overflow:hidden;
-  border-radius: 1rem;
 }
 .topNavImg{
   width: 20%;
   height:auto;
 }
 .topNav a{
-    color: #0e0101;
+    float:right;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    padding: .3rem;
-    margin: 0;
+    padding:14px 16px;
     text-decoration: none;
-    font-size: 20px;
-    font-style: bold;
-    list-style-type:none;
+    font-size: 18px;
 }
 .topNav a:hover{
-  background-color: hotpink;
+  background-color: rgba(182, 182, 182, 0.644);
 }
 .topNav a.active{
-  color: red;
+  color: rgba(161, 161, 161, 0.644);
   background-color: black;
 }
 .topNav ul{
@@ -76,11 +91,7 @@ body{
   display: block;
   transition: .3s background-color;
 }
-.heroImg{
-  background-image: url("/image/city.jpg");
- 
-  background-size: 80%;
-}
+
 .topHeader{
   text-align:center;
   background:grey;
