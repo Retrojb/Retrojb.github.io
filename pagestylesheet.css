@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding: 0;
     margin: 0;  
     
@@ -29,12 +29,7 @@ html{
   border-radius: 1rem;
   
 }
-.subContainer{
-  margin:3rem;
-  float: left;
-  margin-right: 2%;
-  width: 25%;
-}
+
 .container{
   border: 1px solid black;
   border-radius: 1rem;
@@ -78,15 +73,7 @@ figure{
 figure img{
   width:100%
 }
-figure figcaption{
-  bottom: 0.3rem;
-  padding: 0.1rem;
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  text-align: end
-}
+
 .images{
   width: 20%;
   height: auto;

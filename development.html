@@ -2,61 +2,66 @@
 <html>
     <head>
             <meta charset="utf-8">
-            <meta content="viewport" width="width-device">
+            <meta content="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <link rel="page stylesheet" href="pagestylesheet.css"  />
-            <link rel="navigation stylesheet" href="styles.css"  />
-            <link rel="image stylesheet" href="imagestyle.css"    />
+            <link rel="navigation stylesheet" href="navigation.css"  />
+            <link rel="title stylesheet" href="titleStyle.css"  />
+            <link rel="image" href="imagestyle.css"  />
+            <script src="app.js"></script>
             <title>Baltes Development</title>
     </head>
 
     <body> 
-        <header>
-          <div class="box-hero responsive" style="max-height:500px">        
-                    <img class="mySlides" src="images/mario2.jpg">
-                    <img class="mySlides" src="images/hereandgone.jpg">
-                    <img class="" src="images/cityofDayton.jpg" >
-                    <script>
-                      var slideIndex = 0;
-                        carousel();
-                        function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("mySlides");
-                            for (i = 0; i < x.length; i++) {
-                              x[i].style.display = "none"; 
-                            }
-                            slideIndex++;
-                            if (slideIndex > x.length) {slideIndex = 1} 
-                            x[slideIndex-1].style.display = "block"; 
-                            setTimeout(carousel, 4000);
-                        }
-                      </script>
-                </div>
-                      <div class="innerContainer">
-                        <h1>Baltes Design &amp Development</h1>
-                                <h3>Where science and art collide</h3>
-                                <h3 class="topHeader">Development: You can think it, you can build it</h3>
-                              </div>
-                        <span class="checkbox-container clearfix">
-                            <input class="checkbox-trigger" type="checkbox"  />
-                            <span class="menu-content clearfix">
-                                <ul>
-                                  <li><a href="index.html">Home</a></li>
-                                  <li><a href="cartographypage.html">Cartography</a></li>
-                                  <li><a href="design.html">Art</a></li>
-                                  <li><a href="aboutme.html">About Me</a></li>
-                                </ul>
-                              <span class="hamburger-menu"></span>
-                            </span>
-                          </span>
-                      </div> 
-               </header> 
-
+      <header>
+            
+            
+        <nav>  
+            <span class="checkbox-container clearfix">
+                <input class="checkbox-trigger" type="checkbox"  />
+                    <span class="menu-content clearfix">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cartographypage.html">Cartography</a></li>                                <li><a href="design.html">Art</a></li>
+                            <li><a href="design.html">Design</a></li>
+                        </ul>
+                    <span class="hamburger-menu"></span>
+                </span>
+            </span>
+        </nav>
+    </header>
+<main>   
+    <section class="title clearfix">
+        <h1>Baltes Design &amp Development</h1>
+        <h3>Where science and art collide</h3>
+        <h3>Development: You can think it, you can build it</h3>
+    </section>
+    <div>       
+       <img class="mySlides" src="images/mario2.jpg" height="400" width="100%">
+       <img class="mySlides" src="images/hereandgone.jpg" height="400" width="100%">
+       <img class="mySlides" src="images/cityofDayton.jpg" height="400" width="100%">
+        <script>
+              var slideIndex = 0;
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none"; 
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1} 
+                    x[slideIndex-1].style.display = "block"; 
+                    setTimeout(carousel, 4000);
+                }
+          </script>
+    </div>
          <main class="headBack">  
           <div class="mainContainer">
              <h4 class="topHeader"> This project 1</h4>
                <section class="subContainer clearfix">
                  <div class="imagestylecart insideContainers">
-              <img src="images/social vulnerbility.jpg" />         
+              <img src="images/social vulnerbility.jpg" <img src="images/social vulnerbility.jpg" height="40%" width="50%">         
               <p class="textContainer clearfix"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
                  </div>     
                  
@@ -68,7 +73,7 @@
              <h4 class="topHeader"> This project 2</h4>
                <section class="subContainer clearfix">
                  <div class="imagestylecart insideContainers">
-              <img src="images/social vulnerbility.jpg" />         
+              <img src="images/social vulnerbility.jpg" height="40%" width="50%">         
               <p class="textContainer clearfix"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
                  </div>                     
          </section>
@@ -76,19 +81,22 @@
              <h4 class="topHeader"> This project 3</h4>
                <section class="subContainer clearfix">
                  <div class="imagestylecart insideContainers">
-              <img src="images/social vulnerbility.jpg" />         
+                  <img src="images/social vulnerbility.jpg" height="40%" width="50%">        
               <p class="textContainer clearfix"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
                  </div>                     
          </section>
             </main>
-              <footer class="topNav">
-                
-                <ul>
-                  <li>Baltes Cartography and Development    2018<li>
-                 <li><a href="index.html">Home</a><li>  
-                 <li><a href="aboutme.html">About me</a><li>
-                </ul>
-                  </footer>
+            <footer class="foot">
+              <section>
+                <p>Baltes Cartography&copy</p>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="twitter.com"><img src="images/Twitter_bird_icon.png" width="20" height="20"></a>
+              <a href="linkedin.com"><img src="images/linkedin.png" width="20" height="20"></a>
+          <a href="instgram.com"><img src="images/instagram_PNG3.png" width="20" height="20"></a>
+          <a href="tumblr.com"><img src="images/Tumblr_icon.png" width="20" height="20"></a>
+              <a href="github.com"><img src="images/github-sociocon.png" width="20" height="20"></a></p>
+              </section>
+          </footer>
 
 
     </body>

@@ -1,0 +1,8 @@
+a:link, a:visited{
+    color:white;
+}
+a:hover, a:active{
+    color:darkgrey;
+    text-decoration:underline;
+    background-color: grey;
+}

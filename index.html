@@ -5,34 +5,56 @@
     <meta content="viewport" width="width-device">
     <link rel="primary stylesheet" href="pagestylesheet.css"  />
     <link rel="navigation stylesheet" href="styles.css"  />
+    <link rel="image stylesheet" href="imagestyle.css"    />
     <title>Baltes Portfolio Home Page</title>
 </head>
 <body>
     
-    <header>
-        <div class="imgContainer">
-            <div class="innerContainer">
-                <h1>Baltes Design &amp Development</h1>
-                    <h2>Baltes Cartography | Design | Development</h2>
-                        <h3>Where science and art collide</h3>
+ <header>
+           <div class="container">
+            <div class="box-hero responsive" style="max-height:500px">        
+                <img class="mySlides" src="images/mario2.jpg">
+                <img class="mySlides" src="images/hereandgone.jpg">
+                <img class="" src="images/cityofDayton.jpg" >
+                <script>
+                          var slideIndex = 0;
+                            carousel();
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none"; 
+                                }
+                                slideIndex++;
+                                if (slideIndex > x.length) {slideIndex = 1} 
+                                x[slideIndex-1].style.display = "block"; 
+                                setTimeout(carousel, 4000);
+                            }
+                            </script>
+                    </div> 
+                    <div class="innerContainer">
+                            <h1>Baltes Design &amp Development</h1>
+                                <h2>Baltes Cartography | Design | Development</h2>
+                                    <h3>Where science and art collide</h3>
+                        </div>
+                    <span class="checkbox-container clearfix">
+                            <input class="checkbox-trigger" type="checkbox"  />
+                            <span class="menu-content clearfix">
+                                <ul>
+                                        <li><a href="cartographypage.html" target="_blank">Cartography</a></li>
+                                        <li><a href="design.html" target="_blank">Art</a></li>
+                                        <li><a href="development.html" target="_blank">Design</a></li>
+                                        <li><a href="aboutme.html" target="_blank">About Me</a></li>
+                                </ul>
+                              <span class="hamburger-menu"></span>
+                            </span>
+                          </span>
+                </div>  
             </div>
-        
-            <span class="checkbox-container clearfix">
-                    <input class="checkbox-trigger" type="checkbox"  />
-                    <span class="menu-content clearfix">
-                        <ul>
-                                <li><a href="cartographypage.html" target="_blank">Cartography</a></li>
-                                <li><a href="design.html" target="_blank">Art</a></li>
-                                <li><a href="development.html" target="_blank">Design</a></li>
-                                <li><a href="aboutme.html" target="_blank">About Me</a></li>
-                        </ul>
-                      <span class="hamburger-menu"></span>
-                    </span>
-                  </span>
-             
-    </div>  
-</header>
-<main>
+            </header>
+
+            
+            <main>
     <section class=" highlights clearfix"> 
         <div class="container clearfix">
         <img  class= "images" src="images/john-final.jpg" alt="portrait of John Baltes" >
@@ -59,16 +81,17 @@
     <h3 class ="topHeader mainContainer clearfix">Skills:</h3>
     
 </section>
-<footer class="topNav">
-                
-        <ul>
-          <li>Baltes Cartography and Development    2018<li>
-         <li><a href="index.html">Home</a><li>  
-         <li><a href="aboutme.html">About me</a><li>
-        </ul>
-          </footer>
-
-
-    </main>
+<footer class="foot">
+    <section>
+      <p>Baltes Cartography&copy</p>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="twitter.com"><img src="images/Twitter_bird_icon.png" width="20" height="20"></a>
+    <a href="linkedin.com"><img src="images/linkedin.png" width="20" height="20"></a>
+<a href="instgram.com"><img src="images/instagram_PNG3.png" width="20" height="20"></a>
+<a href="tumblr.com"><img src="images/Tumblr_icon.png" width="20" height="20"></a>
+    <a href="github.com"><img src="images/github-sociocon.png" width="20" height="20"></a></p>
+    </section>
+</footer>
+</main>
 </body>
 </html>
