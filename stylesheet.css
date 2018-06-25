@@ -22,6 +22,7 @@ header nav ul li{
     content: '';
     display: block;
 }
+
 .aboutme {
     border-style: solid;
     border-width: 2px;
