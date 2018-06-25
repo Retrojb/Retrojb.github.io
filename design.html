@@ -14,23 +14,35 @@
             <title>Baltes Art &amp; Design</title>   
 </head>
 <body>
-    <header>
-        <nav>  
-           <span class="checkbox-container clearfix">
-             <input class="checkbox-trigger" type="checkbox"  />
-               <span class="menu-content clearfix">
-                 <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="cartographypage.html">Cartography</a></li>                                
-                   <li><a href="development.html">Development</a></li>
-                   <li><a href="blogpage.html">Blog</a></li>
-                   <li><a href="aboutme.html">About Me</a></li>
-                 </ul>
-                 <span class="hamburger-menu"></span>
-                 </span>
-               </span>
-           </nav>
-       </header>
+        <header>
+                <nav> 
+                    <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="design.html">Art</a></li>
+                            <li><a href="development.html">Development</a></li>                                
+                            <li><a href="blogpage.html">Blog</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                        </ul>
+                    </div>
+                <button class="checkbox-container"><span onclick="openNav()">open</span></button> -->
+                <script>
+                           function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                            }
+        
+                            function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                            document.getElementById("main").style.marginLeft = "0";
+                            document.body.style.backgroundColor = "white";
+                            }
+                </script>
+                </div>    
+                </nav>
+            </header>
 <main>
     <section class="title clearfix">
         <h1>Baltes Design &amp Development</h1>
