@@ -7,7 +7,34 @@
 html{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-
+ol{
+  list-style: none;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top:2rem;
+}
+.pump{
+  padding: 1rem;
+  
+}
+.help{
+  padding: 2rem;
+  text-align: center;
+}
+.para{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left:15%;
+  padding-right: 15%;
+}
+.para2{
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left:10%;
+  padding-right: 10%;
+}
 .innerContainer{
   margin-left: .5rem;
   float: right;
@@ -25,7 +52,7 @@ html{
 .mainContainer{
   padding:2px;
   margin:0px;
-  background:grey;
+  
   border-radius: 1rem;
   
 }
@@ -33,39 +60,15 @@ html{
 .container{
   border: 1px solid black;
   border-radius: 1rem;
-  margin: .5rem;
+  margin: .6rem;
   margin-right: 2%;
   display: grid;
   padding: 1rem;
-  float: left;
+  text-align: center;
   background-color: white;
   width:35%;
 }
-.containerTwo{
-  border: 1px solid black;
-  border-radius: 1rem;
-  margin: .5rem;
-  margin-right: 2%;
-  display: grid;
-  padding: 1rem;
-  float: right;
-  width:55%;
-  background-color: white;
-}
-.highlights{
-  margin: 2rem 0;
-}
-.highlights section{
-  float:left;
-  margin-right: 2%;
-  width:38%;
-  padding: .5rem;
-}
-.highlights div:last-child{
-  
-  margin-right: 0;
-  
-}
+
 figure{
   margin: 0;
   position: relative;
@@ -75,8 +78,13 @@ figure img{
 }
 
 .images{
-  width: 20%;
-  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 50%;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 3rem;
 }
 .textContainer{
   background:grey;
@@ -84,14 +92,4 @@ figure img{
 	margin-right: 2%;
 	padding: 1rem;
 	width: 32%;
-}
-.aboutme {
-  border-style: solid;
-  border-width: 2px;
-  text-align: center;
-  border-color: indigo;
-  background-color: rgb(18, 236, 116);
-  border-radius: 0 5px 0 50px;
-  float: left;
-  
 }

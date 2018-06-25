@@ -2,71 +2,69 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta content="viewport" width="width-device">
-    <link rel="primary stylesheet" href="pagestylesheet.css"  />
-    <link rel="navigation stylesheet" href="styles.css"  />
-    <link rel="image stylesheet" href="imagestyle.css"    />
+    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="page stylesheet" href="pagestylesheet.css"  />
+    <link rel="navigation stylesheet" href="navigation.css"  />
+    <link rel="title stylesheet" href="titleStyle.css"  />
+    <link rel="image" href="imagestyle.css"  />
+    <script src="app.js"></script>
     <title>Baltes Portfolio Home Page</title>
 </head>
 <body>
+    <header>    
+        <nav>  
+            <span class="checkbox-container clearfix">
+                <input class="checkbox-trigger" type="checkbox"  />
+                    <span class="menu-content clearfix">
+                        <ul>
+                            <li><a href="cartographypage.html">Cartography</a></li>                                <li><a href="design.html">Art</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="development.html">Development</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                        </ul>
+                    <span class="hamburger-menu"></span>
+                </span>
+            </span>
+        </nav>
+    </header>
+<main>   
+    <section class="title clearfix">
+        <h1>Baltes Design &amp Development</h1>
+        <h3>Where science and art collide</h3>
+        <h3>Development: You can think it, you can build it</h3>
+    </section>
+    <div>       
+       <img class="mySlides" src="images/mario2.jpg" height="400" width="100%">
+       <img class="mySlides" src="images/hereandgone.jpg" height="400" width="100%">
+       <img class="mySlides" src="images/cityofDayton.jpg" height="400" width="100%">
+        <script>
+              var slideIndex = 0;
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none"; 
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1} 
+                    x[slideIndex-1].style.display = "block"; 
+                    setTimeout(carousel, 4000);
+                }
+          </script>
+    </div>
+        
+<main>
     
- <header>
-           <div class="container">
-            <div class="box-hero responsive" style="max-height:500px">        
-                <img class="mySlides" src="images/mario2.jpg">
-                <img class="mySlides" src="images/hereandgone.jpg">
-                <img class="" src="images/cityofDayton.jpg" >
-                <script>
-                          var slideIndex = 0;
-                            carousel();
-                            function carousel() {
-                                var i;
-                                var x = document.getElementsByClassName("mySlides");
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none"; 
-                                }
-                                slideIndex++;
-                                if (slideIndex > x.length) {slideIndex = 1} 
-                                x[slideIndex-1].style.display = "block"; 
-                                setTimeout(carousel, 4000);
-                            }
-                            </script>
-                    </div> 
-                    <div class="innerContainer">
-                            <h1>Baltes Design &amp Development</h1>
-                                <h2>Baltes Cartography | Design | Development</h2>
-                                    <h3>Where science and art collide</h3>
-                        </div>
-                    <span class="checkbox-container clearfix">
-                            <input class="checkbox-trigger" type="checkbox"  />
-                            <span class="menu-content clearfix">
-                                <ul>
-                                        <li><a href="cartographypage.html" target="_blank">Cartography</a></li>
-                                        <li><a href="design.html" target="_blank">Art</a></li>
-                                        <li><a href="development.html" target="_blank">Design</a></li>
-                                        <li><a href="aboutme.html" target="_blank">About Me</a></li>
-                                </ul>
-                              <span class="hamburger-menu"></span>
-                            </span>
-                          </span>
-                </div>  
-            </div>
-            </header>
-
-            
-            <main>
-    <section class=" highlights clearfix"> 
-        <div class="container clearfix">
-        <img  class= "images" src="images/john-final.jpg" alt="portrait of John Baltes" >
-            <p>
-                John Baltes<br>
-                baltescartography@gmail.com<br>
-                (937)-272-0959
-            </p>    
-        </div>
-        <div class="containerTwo clearfix">
-             <p>
-            ABOUT ME:Welcome to Baltes Design and Development. My name is John Baltes
+    <img  class= "images" src="images/john-final.jpg" alt="portrait of John Baltes"  >
+        <p class="para">
+            John Baltes<br>
+            baltescartography@gmail.com<br>
+            (937)-272-0959<br>
+        </p>  
+        <p class="para">
+            ABOUT ME: Welcome to Baltes Design and Development. My name is John Baltes
             I am currently a Junior Web Developer and Certified Cartographer. A little 
             bit about myself, I gained my Associates degree in Georgraphy and a certificate
             in GIS from Sinclair Community College in Dayton, Oh in 2016. I moved to 
@@ -75,12 +73,30 @@
             to develop my skills as a programmer. My vast knowledge of the world and computers 
             has started my initative to combine my skills to help. 
         </p>
-    </div>
-</section>
 <section>
-    <h3 class ="topHeader mainContainer clearfix">Skills:</h3>
+    <h3 class="help">Skills:</h3>
+        <ol>
+            <a href="development.html"><img class="pump" src="images/code logo.png" width="50" height="50"></a>
+            <li>HTML 5</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Java</li>
+            <li>Spring</li>
+        </ol>
+        <ol>
+            <a href="design.html"><img  class="pump" src="images/art.png" width="50" height="50>"></a>
+            <li>Paint.net</li>
+            <li>Adobe</li>
+            <li>Pencil</li>
+        </ol> 
+        <ol> 
+            <a href="cartographypage.html"><img class="pump" src="images/globe.png" width="50" height="50"></a>  
+            <li>ArcGIS &amp QGIS</li>
+            <li>SQL</li>
+        </ol>
     
 </section>
+
 <footer class="foot">
     <section>
       <p>Baltes Cartography&copy</p>
