@@ -27,5 +27,22 @@ a:hover, a:active{
 .mySlides{
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     
+}
+.email > a{
+    color: black;
+}
+.zoom{
+    transition: transfom .2s;
+}
+.zoom:hover{
+    transform: scale(1.5);
+   background-color: none;
+    text-decoration: none;
+}
+.social-tags{
+    width: 40px;
+    height: 40px;
 }

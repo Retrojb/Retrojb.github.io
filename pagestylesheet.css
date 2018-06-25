@@ -24,6 +24,8 @@ ol{
 }
 .para{
   text-align: center;
+  line-height: 40px;
+  font-size: 22px;
   padding-top: 10%;
   padding-bottom: 10%;
   padding-left:15%;
@@ -31,6 +33,7 @@ ol{
 }
 .para2{
   text-align: center;
+  
   padding-top: 3%;
   padding-bottom: 3%;
   padding-left:10%;
@@ -44,6 +47,7 @@ ol{
   height: auto;
   margin-top: 18rem;
 }
+
 
 .clearfix::after{
     clear:both;
