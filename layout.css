@@ -78,7 +78,12 @@
     padding: 1rem;
     width:35%;
 }
-
+.collapse{
+    margin-left:15rem;
+    padding: 18px;
+    width:50%;
+    font-size: 20px;
+}
 figure{
     margin: 0;
     position: relative;

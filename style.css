@@ -8,7 +8,24 @@ a:link, a:visited{
 a:hover, a:active{
     text-decoration:none;
     
-}    
+}   
+.collapse{
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+
+} 
+.inner-text{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    
+}
+.active .collapse:hover{
+    background-color: antiquewhite;
+}
 
 .content{
     border: solid 1px black;
