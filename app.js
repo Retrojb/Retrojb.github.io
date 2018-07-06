@@ -1,9 +1,25 @@
+const openModalBtn = document.getElementById('open-modal');
+
+if (openModalBtn) {
+  openModalBtn.addEventListener('click', function(){
+  let modalScreen = document.getElementById('modal-screen');
+  modalScreen.style.display = 'block';
+  });
+
+  const closeModalBtn = document.getElementById('close-modal');
+  closeModalBtn.addEventListener('click', function(){
+      let modalScreen = document.getElementById('modal-screen');
+      modalScreen.style.display = 'none';
+  });
+}
+
+
 var slideIndex = 0;
 carousel();
 
 function carousel() {
     var i;
-    var x = document.getElementsByClassName("slides");
+    var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
     }

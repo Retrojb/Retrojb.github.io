@@ -1,0 +1,57 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+}
+
+a:link, a:visited{
+    color:white;
+}
+a:hover, a:active{
+    text-decoration:none;
+    
+}    
+
+.content{
+    border: solid 1px black;
+}
+.container{
+    border: 1px solid black;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: white;
+}
+.checkbox-container {
+    background: #000000
+}
+
+.email > a{
+    color: black;
+}
+.foot{
+    border: solid 1px black;
+    background-color: black;
+    color:white;
+}
+
+.header-title{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.social-tags{
+    width: 40px;
+    height: 40px;
+}
+
+.title{
+    border: solid 1px black;
+    background-color: black;
+    color:white;
+}
+.zoom{
+    transition: transfom .2s;
+}
+.zoom:hover{
+    transform: scale(2);
+   background-color: none;
+    text-decoration: none;
+}

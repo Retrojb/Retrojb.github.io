@@ -3,75 +3,38 @@
     <head>
         <meta charset="utf-8">
             <meta content="viewport" content="width=device-width, initial-scale=1.0">
-            <style>
-                @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-                </style>
-            <link rel="page stylesheet" href="pagestylesheet.css"  />
-            <link rel="navigation stylesheet" href="navigation.css"  />
-            <link rel="title stylesheet" href="titleStyle.css"  />
-            <link rel="image" href="imagestyle.css"  />
-            <script src="app.js"></script>
+            <link rel="stylesheet" href="style.css"  />
+            <link rel="stylesheet" href="layout.css"  />
+            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
             <title>Baltes Art &amp; Design</title>   
 </head>
 <body>
-        <header>
-                <nav> 
-                    <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="design.html">Art</a></li>
-                            <li><a href="development.html">Development</a></li>                                
-                            <li><a href="blogpage.html">Blog</a></li>
-                            <li><a href="aboutme.html">About Me</a></li>
-                        </ul>
-                    </div>
-                <button class="checkbox-container"><span onclick="openNav()">open</span></button> -->
-                <script>
-                           function openNav() {
-                            document.getElementById("mySidenav").style.width = "250px";
-                            document.getElementById("main").style.marginLeft = "250px";
-                            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-                            }
-        
-                            function closeNav() {
-                            document.getElementById("mySidenav").style.width = "0";
-                            document.getElementById("main").style.marginLeft = "0";
-                            document.body.style.backgroundColor = "white";
-                            }
-                </script>
-                </div>    
-                </nav>
-            </header>
-<main>
     <section class="title clearfix">
         <h1>Baltes Design &amp Development</h1>
         <h3>Where science and art collide</h3>
         <h3>Art: Freedom in design</h3>
     </section>
+    <header>
+            <div id= "mySidenav">
+                <nav> 
+                    <ul>
+                        <li><a href="index.html" class="home">Home</a></li>
+                        <li><a href="development.html" class="dev">Code</a></li>                                
+                        <li><a href="cartographypage.html" class="art">Mapping</a></li>
+                        <li><a href="blogpage.html" class="blog">Blog</a></li>
+                        <li><a href="aboutme.html" class="about">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            
     <div class="carosel-pos">       
         <img class="mySlides" src="images/mario2.jpg" height="400" width="80%">
         <img class="mySlides" src="images/alien-birthday.png" height="400" width="80%">
         <img class="mySlides" src="images/catcup.jpg" height="400" width="80%">
         <img class="mySlides" src="images/catlog.jpg" height="400" width="80%"> 
         <img class="mySlides" src="images/shoes.jpg" height="400" width="80%">
-        <script>
-              var slideIndex = 0;
-                 carousel();
-                 function carousel() {
-                     var i;
-                     var x = document.getElementsByClassName("mySlides");
-                     for (i = 0; i < x.length; i++) {
-                       x[i].style.display = "none"; 
-                     }
-                     slideIndex++;
-                     if (slideIndex > x.length) {slideIndex = 1} 
-                     x[slideIndex-1].style.display = "block"; 
-                     setTimeout(carousel, 4000);
-                 }
-           </script>
-    </div>
-</header> 
+    </div> 
 
          <main class="headBack">  
             <section class="mainContainer clearfix">
@@ -91,7 +54,7 @@
             </section> 
             </main>
             <footer class="foot">
-                    <section>
+                    <span>
                       <p>Baltes Cartography&copy</p>
                       <p><a href="index.html">Home</a></p>
                       
@@ -101,7 +64,8 @@
                 <a href="https://www.instagram.com/baltez_me_gusta/" target="_blank"><img src="images/instagram_PNG3.png" class="zoom social-tags"></a>
                 <a href="https://retrojb.tumblr.com/" target="_blank"><img src="images/Tumblr_icon.png" class="zoom social-tags"></a>
                     <a href="https://github.com/Retrojb" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a></p>
-                
-                </section>
+                    <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a></p>
+                      </span>
                 </footer>
+                <script src="app.js"></script>
 </html>
