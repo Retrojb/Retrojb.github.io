@@ -220,10 +220,10 @@ header nav ul li{
     display: none;
     position: fixed;
     width: 75vw;
-    height: 75vw;
+    height: auto;
     background-color: black;
     opacity: 0.8;
-    top: 20rem;
+    top: 10rem;
     left:10rem;
     justify-content: center;
     align-items: center;
