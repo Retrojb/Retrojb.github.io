@@ -48,6 +48,7 @@
     box-shadow: 0 5px #666;
     transform: translateY(5px)
 }
+
 .checkbox-container {
 	display: block;
 	float: left;
@@ -83,6 +84,19 @@
     padding: 18px;
     width:50%;
     font-size: 20px;
+    content: "\002B";
+}
+.collapsible:after {
+     /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    float: right;
 }
 figure{
     margin: 0;
@@ -100,13 +114,6 @@ figure img{
     margin: 2rem;
     
   }
-/*.grid-item{
-    border: solid 1px black;
-    color: black;
-    padding: 30px;
-
-}
-*/
 .home {
     top: 20px;
     background-color:black;
@@ -155,7 +162,7 @@ header nav ul li{
     padding: 2rem;
     text-align: center;
 }
-.images{
+.selfie{
     display: block;
     margin-left: auto;
     margin-right: auto; 
@@ -163,6 +170,24 @@ header nav ul li{
     padding: 1rem;
     padding-top: 2rem;
     border-radius: 30rem;
+}
+.images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 400px;
+}
+.images-modal{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+}
+.images:hover{
+    background-color: darkorange;
+    background-blend-mode: multiply;
 }
 .innerContainer{
     margin-left: .5rem;
@@ -217,6 +242,7 @@ header nav ul li{
     
 }
 .mainContainer{
+    display: block;
     padding:2px;
     margin:0px;
     border-radius: 1rem;
@@ -239,6 +265,7 @@ body.modal-open #modal-screen{
 #modal-box{
     color:black;
     background: white;
+    opacity: .99;
     width: 60vw;
     margin: 4rem auto 4rem auto;
     padding: 2rem 2rem 0 2rem;
@@ -258,6 +285,7 @@ body.modal-open #modal-screen{
     padding-bottom: 3%;
     padding-left:10%;
     padding-right: 10%;
+    overflow: auto;
   }
 
 .poop{

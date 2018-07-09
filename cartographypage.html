@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
             <meta content="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css"  />
-            <link rel="stylesheet" href="layout.css"  />
+            <link rel="stylesheet" href="./CSS/style.css"  />
+            <link rel="stylesheet" href="./CSS/layout.css"  />
             <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
             <title>Baltes Cartography</title>   
 </head>
@@ -36,16 +36,42 @@
                     <img class="mySlides" src="images/social vulnerbility.jpg" height="400" width="80%">
                     <img class="mySlides" src="images/tddgis.jpg" height="400" width="80%">
                 </div>
-    <section class="mainContainer clearfix">
-        <h4 class="help"> Social vulnerability after Hurricane Katrina</h4>
-          <img class="images" src="images/social vulnerbility.jpg" width="300" height="200"/>         
-          <p class="para2"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+    <section class="mainContainer clearfix"> 
+        <h3 class="help"> Social vulnerability after Hurricane Katrina</h3>
+        <h5 class="help">Click the Picture for more information</h5>
+        <button id="open-modal"class="images">
+            <img class="images" src="images/social vulnerbility.jpg" width="300" height="200"/>         
+        </button>
+            <div id="modal-screen">
+                <button id="close-modal" class="buttons">X</button>
+                
+                
+                <img class="images-modal" src="images/social vulnerbility.jpg" width="300" height="200"/>
+                <div id="modal-box">
+                        <button class="collapse">Read More</button>
+                        <p class="para2"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                </div>
+            </div> 
     </section>                     
-        
+
+
+
+
+</section>
+
+
+
+
     <section class="mainContainer clearfix">
       <h4 class="help"> Walkability Project</h4>
         <img class="images" src="images/residential study area.jpg" width="300" height="200"/>         
-        <p class="para2"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+        <button class="collapse">Read More</button>
+        <p class="para2"> What is the overall objective of the project? 
+            The purpose of the project is to assess the walkability of a section of downtown Dayton.
+            This project will require that students complete a project using the GIS workflow.   
+            The project will be divided into these phases and each phase will focus on key deliverables.
+            The deliverables will be completed by either an individual student, team, or the class.  
+        </p>
     </section>                     
          
     <section class="mainContainer clearfix">
@@ -77,6 +103,7 @@
         </span>
     </footer>
     <script src="./JS/app.js"></script>
+    <script src="./JS/modal.js"></script>
 </main>
 </body>
 </html>
