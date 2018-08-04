@@ -9,12 +9,15 @@ a:hover, a:active{
     text-decoration:none;
     
 }   
+h3{
+    font-size: 30px;
+}
 .collapse{
-    background-color: antiquewhite;
+    background-color: rgb(116, 116, 116);
     color: black;
     cursor: pointer;
     border: none;
-    text-align: left;
+    text-align: center;
 
 } 
 .inner-text{

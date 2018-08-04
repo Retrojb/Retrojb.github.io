@@ -32,7 +32,7 @@
    padding: 15px 25px;
    font-size: 24px;
    text-align: center;
-   cursor: crosshair;
+   cursor: default;
    outline: none;
    color:antiquewhite;
    background-color: black;
@@ -40,6 +40,18 @@
    border-radius: 1rem;
    box-shadow: 0 9px #999;
 }
+.buttons-exit{
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: default;
+    outline: none;
+    color:antiquewhite;
+    background-color: black;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 9px #999;
+ }
 .buttons:hover{
     background-color: slategrey;
 }
@@ -87,7 +99,7 @@
     content: "\002B";
 }
 .collapsible:after {
-     /* Unicode character for "plus" sign (+) */
+    content: "\002B";/* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: black;
     float: right;
@@ -166,10 +178,16 @@ header nav ul li{
     display: block;
     margin-left: auto;
     margin-right: auto; 
-    width: 50%;
+    width: 40%;
     padding: 1rem;
     padding-top: 2rem;
     border-radius: 30rem;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .images{
     display: block;
@@ -250,11 +268,12 @@ header nav ul li{
 #modal-screen{
     display: none;
     position: fixed;
+    z-index: 1;
     width: 75vw;
     height: auto;
     background-color: black;
     opacity: 0.8;
-    top: 10rem;
+    top: 1rem;
     left:10rem;
     justify-content: center;
     align-items: center;
@@ -267,8 +286,8 @@ body.modal-open #modal-screen{
     background: white;
     opacity: .99;
     width: 60vw;
-    margin: 4rem auto 4rem auto;
-    padding: 2rem 2rem 0 2rem;
+    margin: 1rem auto 1rem auto;
+    padding: 1rem;
 }
 .para{
     text-align: center;
@@ -325,6 +344,16 @@ ol{
     word-wrap: break-word;
     margin: 0;
     padding: 1rem;
+}
+
+.drawing-canvas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border:solid 3px black;
+    margin: 1rem;
+    
 }
 
 @media screen and (max-height: 450px) {
