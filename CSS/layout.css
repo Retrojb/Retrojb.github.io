@@ -3,43 +3,80 @@
     padding: 0;
     margin: 0;
 }
-.blog {
-    top: 200px;
-    background-color: black;
-    color: antiquewhite;
+.flex-container-1{
+    display: flex;
+    padding: 1.5rem 0 1.5rem 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ffffffb3;
+    margin-right: 8rem;
+    padding:8rem 0  8rem 0;
+    -webkit-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
+    -moz-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
+    box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
 }
-.dev {
-    top: 140px;
-    background-color: black;
-    color: antiquewhite;
+.flex-container-2{
+    background-color: #ffffffb3;
+    margin-right: 8rem;
+    
+    -webkit-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
+    -moz-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
+    box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
 }
-.home {
-    top: 20px;
-    background-color:black;
-    color: antiquewhite;
+
+
+.flex-container-3{
+    border: 2px solid yellow;
+    background-color: #ffffffb3;
+    margin-right: 8rem;
+    padding-top: 8rem;
+    -webkit-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
+    -moz-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
+    box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
 }
-.art {
-    top: 80px;
-    background-color: black;
-    color: antiquewhite;
+.flex-container-3 h3{
+    font-size: 40px;
+    font-weight: bolder;
 }
-.about{
-    top: 260px;
-    background-color: black;
-    color: antiquewhite;
+.nav-links{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+.nav-links li{
+    padding: 1.5rem .5rem 1.5rem .5rem;
+}
+.buttons a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-size:24px;
+    font-weight:bolder;
+   -webkit-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      -moz-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      -ms-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      -o-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  }
+
 .buttons{
-   padding: 15px 25px;
-   font-size: 24px;
-   text-align: center;
-   cursor: default;
-   outline: none;
-   color:antiquewhite;
-   background-color: black;
-   border: none;
-   border-radius: 1rem;
-   box-shadow: 0 9px #999;
+    margin-top:2rem;
+    color: #000000;
+    font-size:24px;
+    font-weight:bolder;
+   -webkit-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      -moz-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      -ms-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      -o-transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      transition: all 2s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+      padding: 12px 24px;
 }
+.buttons:hover{
+    color: #fff;
+   background-color:#a56bce;
+}
+
 .buttons-exit{
     padding: 10px 20px;
     font-size: 20px;
@@ -117,15 +154,7 @@ figure{
 figure img{
     width:100%
 }
-.foot{
-    display: inline-block;
-    text-align:center;
-    padding: 1rem;
-    width: 100%;
-    line-height: 30px;
-    margin: 2rem;
-    
-  }
+
 .home {
     top: 20px;
     background-color:black;
@@ -154,9 +183,11 @@ h2, h3, h4{
     background-color: black;
     color: antiquewhite;
 }
-header h1{
-    float: right;
-    padding-right: 1rem;
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid blue;
 }
 header nav{
     float: left;
@@ -174,14 +205,9 @@ header nav ul li{
     padding: 2rem;
     text-align: center;
 }
-.selfie{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 40%;
-    padding: 1rem;
-    padding-top: 2rem;
-    border-radius: 30rem;
+.profile-picture{
+    width: 300px;
+    height: 300px;
 }
 .video{
     display: flex;
@@ -220,9 +246,9 @@ header nav ul li{
     padding: 20px;
 }
 #mySidenav {
-    position: absolute;
+    position: relative;
     left: 0px;
-    top:107px;
+    top:20px;
     width: 200px;
 }
 #mySidenav ul{
@@ -256,7 +282,8 @@ header nav ul li{
     margin-right: auto;
     padding: 2rem 0 2rem 0;
     width:auto;
-    height: 400px;
+    height: 500px;
+    
     
 }
 .mainContainer{
@@ -267,14 +294,14 @@ header nav ul li{
 }
 #modal-screen{
     display: none;
-    position: fixed;
+    position: initial;
+    top: 2rem;
+    right:2rem;
     z-index: 1;
-    width: 75vw;
+    width: 50%;
     height: auto;
     background-color: black;
     opacity: 0.8;
-    top: 1rem;
-    left:10rem;
     justify-content: center;
     align-items: center;
 }
@@ -285,23 +312,17 @@ body.modal-open #modal-screen{
     color:black;
     background: white;
     opacity: .99;
-    width: 60vw;
+    width: 80%;
     margin: 1rem auto 1rem auto;
     padding: 1rem;
 }
 .para{
-    text-align: center;
-    line-height: 40px;
-    font-size: 22px;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left:15%;
-    padding-right: 15%;
+    
   }
 .para2{
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     padding-left:10%;
     padding-right: 10%;
     overflow: auto;
@@ -337,14 +358,7 @@ ol{
 .skill-container article:last-child{
     margin-right: 0;
 }
-.title{
-    display: block;
-    width: 100%;
-    text-align:center;
-    word-wrap: break-word;
-    margin: 0;
-    padding: 1rem;
-}
+
 
 .drawing-canvas{
     display: flex;

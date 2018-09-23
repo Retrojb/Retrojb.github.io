@@ -5,33 +5,80 @@
     <meta content="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/layout.css"  />
     <link rel="stylesheet" href="./CSS/style.css"  />
+    <link rel="stylesheet" href="./CSS/menu.css"  />
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="./" rel="stylesheet">
     <title>Baltes Portfolio Home Page</title>
 </head>
+
 <body>
-    <section class="title clearfix">
-        <h1>Baltes Design &amp Development</h1>
+<header>
+    <div class="title">
+        <h1>Baltes Design &amp; Development</h1>
         <h3>Where science and art collide</h3>
-        <h3>Development: You can think it, you can build it</h3>
-    </section>
-    <header>
-        <div id= "mySidenav">
-            <nav> 
-                <ul>
-                    <li><a href="development.html" class="dev">Code</a></li>                                
-                    <li><a href="design.html" class="art">Art</a></li>
-                    <li><a href="cartographypage.html" class="home">Mapping</a></li>
-                    <li><a href="blogpage.html" class="blog">Blog</a></li>
-                    <li><a href="aboutme.html" class="about">About Me</a></li>
-                    <li><a href="examples.html" class="about">.js Examples</a></li>
-                </ul>
-            </nav>
+        
+        <input id="burger" type="checkbox" hidden/>
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        <nav> 
+            <ul class="nav-links">
+                <li><a href="index.html" class="buttons">Home</a></li>
+                <li><a href="development.html" class="buttons">Code</a></li>                                
+                <li><a href="design.html" class="buttons">Art</a></li>
+                <li><a href="cartographypage.html" class="buttons">Mapping</a></li>
+                <li><a href="blogpage.html" class="buttons">Blog</a></li>
+                <li><a href="aboutme.html" class="buttons">About Me</a></li>                    
+                <li><a href="examples.html" class="buttons">.js Examples</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main-adj" class="main-flex-container">
+    <div class="flex-container-1">
+
+        <div class="scene">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="./images/john-final.jpg" class="self-img" alt="John Baltes"/>
+                </div> 
+    <div class="card-face card-back">
+        <ul>
+        <h2>John Baltes</h2> 
+        <li>Full-Stack Software Developer</li>
+        <li>GIS Analysis</li>
+        <li>Artist</li>
+        <li>Motorcycle Enthusiast</li>
+        <li>Amature Photographer</li>
+        </ul>
+    </div>
+</div>
         </div>
-    </header>
-<main>   
-    <img  class= "selfie" src="images/john-final.jpg" alt="portrait of John Baltes"  >
-    <div class="para">
-    <button id="open-modal" class="buttons">About Me</button>
+
+        
+        <div id="biography">
+        <h3>ABOUT ME:</h3>
+        <span> <h4>Welcome to Baltes Design and Development.</h4><p> Greetings, my name is John Baltes
+                I am currently Software Developer and Certified Cartographer. A little 
+                bit about myself, I gained my Associates degree in Georgraphy and a certificate
+                in GIS from Sinclair Community College in Dayton, Oh in 2016. I moved to 
+                Columbus to continue my education at Ohio State University, where I have studied
+                GIS, Geography and Art. I desided to expand my knowledge and joined We Can {Code} IT
+                to develop my skills as a programmer. My vast knowledge of the world and computers 
+                has started my initative to combine my skills to help.</p></span> 
+        <button id="open-modal" class="buttons">Contact me</button>
+        
+
+</div>
+
+</div>
+
+
+<div class="para">
 
         <div id="modal-screen">
             <div id="modal-box">
@@ -40,19 +87,15 @@
                     <h3>John Baltes</h3><br>
                     <h3><span class="email"><a href="mailto:baltescartography@gmail.com">baltescartography@gmail.com</a></span></h3><br>
                     <h4>(937)-272-0959</h4><br>
-            <h4>ABOUT ME:</h4><p> Welcome to Baltes Design and Development. My name is John Baltes
-            I am currently a Junior Web Developer and Certified Cartographer. A little 
-            bit about myself, I gained my Associates degree in Georgraphy and a certificate
-            in GIS from Sinclair Community College in Dayton, Oh in 2016. I moved to 
-            Columbus to continue my education at Ohio State University, where I have studied
-            GIS, Geography and Art. I desided to expand my knowledge and joined We Can {Code} IT
-            to develop my skills as a programmer. My vast knowledge of the world and computers 
-            has started my initative to combine my skills to help.</p> 
-        
+            
         </div>
-</div>
     </div>
-        <div class="carosel-pos">       
+    </div>
+</div>
+
+<!--
+
+<div class="carosel-pos flex-container-2">       
            <img class="mySlides" src="images/mario2.jpg" height="400" width="80%">
            <img class="mySlides" src="images/hereandgone.jpg" height="400" width="80%">
            <img class="mySlides" src="images/cityofDayton.jpg" height="400" width="80%">
@@ -60,18 +103,27 @@
            <img class="mySlides" src="images/rick.jpg" height="400" width="80%">
            <img class="mySlides" src="images/selfport.jpg" height="400" width="80%">
            <img class="mySlides" src="images/surveyor.jpg" height="400" width="80%">  
-        </div>
-        
-        <h3>Skills:</h3>
+</div>
+
+-->
+     <div class="flex-container-3">
+        <h3>Skills &amp; Technical Inventory:</h3>
         <div class = "poop">
             <span>
                 <ol>
-<div class="zoom"><a href="development.html"><img class=" pump" src="images/code logo.png" width="100" height="100"></a></div>
- <li>HTML 5</li>               
+<div class="zoom"><a href="development.html">
+    <h4>Programming</h4>
+    <img class=" pump" src="images/Code.png" width="100" height="100"></a></div>
+    
+    <li>Java</li>
+    <li>Spring MVC</li>
+    <li>SQL</li>
+    <li>Javascript</li>
+    <li>Angular 5</li>
+    <li>React js</li>
+    <li>HTML 5</li>               
  <li>CSS</li>
- <li>Javascript</li>
- <li>Java</li>
- <li>Spring</li>
+ <li>Flexbox</li>
  </ol>
  </span>
      
@@ -95,23 +147,28 @@
  </ol>
  </span>
  </div>
- 
+</div>   
 
 <footer class="foot">
     <span>
         <p>Baltes Cartography&copy;</p>
         <p><a href="index.html">Home</a></p>
         <p>
-          <a href="https://twitter.com/JohnBaltes6" target="_blank"><img src="images/Twitter_bird_icon.png" class="zoom social-tags"></a>
-          <a href="https://linkedin.com/in/john-baltes" target="_blank"><img src="images/linkedin.png" class="zoom social-tags"></a>
-          <a href="https://www.instagram.com/baltez_me_gusta/" target="_blank"><img src="images/instagram_PNG3.png" class="zoom social-tags"></a>
-          <a href="https://retrojb.tumblr.com/" target="_blank"><img src="images/Tumblr_icon.png" class="zoom social-tags"></a>
-          <a href="https://github.com/Retrojb" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a>
-          <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a></p>
-    </span>
-</footer>
+            <a href="https://twitter.com/JohnBaltes6" target="_blank"><img src="images/Twitter_bird_icon.png" class="zoom social-tags"></a>
+            <a href="https://linkedin.com/in/john-baltes" target="_blank"><img src="images/linkedin.png" class="zoom social-tags"></a>
+            <a href="https://www.instagram.com/baltez_me_gusta/" target="_blank"><img src="images/instagram_PNG3.png" class="zoom social-tags"></a>
+            <a href="https://retrojb.tumblr.com/" target="_blank"><img src="images/Tumblr_icon.png" class="zoom social-tags"></a>
+            <a href="https://github.com/Retrojb" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a>
+            <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a></p>
+        </span>
+    </footer>
+</main>
 <script src="./JS/modal.js"></script>
 <script src="./JS/app.js"></script>
-</main>
+<script>
+function OpenNav(x) {
+        x.classList.toggle("change");
+    }
+    </script>
 </body>
 </html>

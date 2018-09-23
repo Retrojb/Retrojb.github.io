@@ -1,17 +1,146 @@
 *{
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif;  
+}
+ /* Header / Nav / Title */
+
+ .title{
+    background-color: 37135b;
+    display: flex;
+    height: 140px;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    z-index: 3;
+    color:white;
+    padding-left: 1.5rem;
+    box-shadow:   0 4px 8px 0 lightgray;
+
+  }  
+.title h1{
+    font-size: 40px;
+    font-family: 'Bungee', cursive;
+    font-weight: 100;
+}
+.title h3{
+    font-size: 24px;
+    font-family: 'Bungee', cursive;
+    font-weight: 100;
 }
 
-a:link, a:visited{
+
+/* Main Body */
+
+#main-adj{
+    position: relative;
+    top: 9rem;
+    
+}
+.main-flex-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../images/mountain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.self-img{
+    width: 300px;
+    height: 400px; 
+}
+
+/* Image Rotations */
+.scene{
+    width: 300px;
+    height: 400px;
+    perspective: 600px;
+}
+.card{
+width: 100%;
+height: 100%;
+position: relative;
+transition: all 1s;
+transform-style: preserve-3d;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.card-face{
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+    -webkit-transition: -webkit-transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+}
+.card-front{
+    width: 300px;
+    height: 400px;    
+}
+.card-back{
+    background-color: #000000;
+    transform: rotateY(180deg);
+    color: White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-front, .card-back{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card-front, .card-back {
+    box-shadow: 0 1px 6px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+.hidden-area{
+    background-color: black;
+    
+    transition: transform 0.5s;
+}
+.hidden-area:hover{
+    visibility: visible;
+}
+#biography{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    width: 50%;
+    text-align: end;
+}
+#biography h3{
+    font-size: 36px;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+ line-height: 30px;
+}
+#biography h4{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
     color:white;
 }
 a:hover, a:active{
     text-decoration:none;
     
 }   
-h3{
-    font-size: 30px;
-}
+
 .collapse{
     background-color: rgb(116, 116, 116);
     color: black;
@@ -46,29 +175,27 @@ h3{
 .email > a{
     color: black;
 }
+
+/* Footer */
+
 .foot{
-    border: solid 1px black;
-    background-color: black;
+    height: 300px;
+    border: solid 1px red;
+    width: 100%;
     color:white;
+    left: 0;
+
 }
 
-.header-title{
-    background-color: black;
-    color: whitesmoke;
-}
 
 .social-tags{
     width: 40px;
     height: 40px;
 }
 
-.title{
-    border: solid 1px black;
-    background-color: black;
-    color:white;
-}
+
 .zoom{
-    transition: transfom .2s;
+    transition: transfom .9s ease;
 }
 .zoom:hover{
     transform: scale(2);
