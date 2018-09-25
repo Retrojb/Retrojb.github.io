@@ -26,13 +26,24 @@
 
 
 .flex-container-3{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #ffffffb3;
     margin-right: 8rem;
     padding-top: 8rem;
     -webkit-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
     -moz-box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
     box-shadow: 10px 2px 26px 0px rgba(212,212,212,0.65);
+}
+.skill-container{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    padding-top: 2.4rem;
+    
 }
 .flex-container-3 h3{
     font-size: 40px;
@@ -245,37 +256,7 @@ header nav ul li{
     transition: margin-left .5s;
     padding: 20px;
 }
-#mySidenav {
-    position: relative;
-    left: 0px;
-    top:20px;
-    width: 200px;
-}
-#mySidenav ul{
-    margin-left:-25px;
-    
-}
-#mySidenav li {
-    display: block;
-}
-#mySidenav a{
-    display: block;
-    transition: 0.3s;
-    padding: 15px;   
-    text-decoration: none; 
-    text-align: center;
-    position: relative;
-    left: 0;
-    top: 0;
-    border-radius: 0 5px 5px 0;
-    box-shadow: 5px 6px #999;
-    font-size: 20px; 
-    color: white; 
-}
-#mySidenav a:hover {
-    transition: 1s;
-    left: 25px;
-}
+
 .mySlides{
     display: block;
     margin-left: auto;
@@ -328,36 +309,6 @@ body.modal-open #modal-screen{
     overflow: auto;
   }
 
-.poop{
-    display:grid;
-    margin:2rem auto 2rem auto;
-    width:1000px;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:20px;
-}
-.pump{
-    padding: 1rem;
-    text-decoration: none;
-  }
-
-ol{
-    list-style: none;
-    text-align: center;
-    padding-bottom: 2rem;
-    padding-top:2rem;
-}
-.skill-container{
-    margin: 3rem 0;
-}
-.skill-container article{
-    float:left;
-    margin-right: 2%;
-    padding: 1rem;
-    width: 30%;
-}
-.skill-container article:last-child{
-    margin-right: 0;
-}
 
 
 .drawing-canvas{
