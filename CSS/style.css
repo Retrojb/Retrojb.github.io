@@ -168,7 +168,6 @@ a:hover, a:active{
 
 .foot{
     height: 300px;
-    border: solid 1px red;
     display: flex;
     color: white;
     justify-content: space-evenly;
@@ -186,7 +185,6 @@ a:hover, a:active{
 .foot ul:hover{
     background-color: none;
 }
-
 .social-tags{
     width: 60px;
     height: 60px;
@@ -194,6 +192,8 @@ a:hover, a:active{
 }
 
 
+
+/* find there homes */
 .zoom{
     transition: transfom .9s ease;
 }
