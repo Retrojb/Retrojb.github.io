@@ -1,83 +1,154 @@
 <!DOCTYPE>
 <html>
-  <head>
-            <meta charset="utf-8">
-            <meta content="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./CSS/style.css"  />
-            <link rel="stylesheet" href="./CSS/layout.css"  />
-            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
-            <title>Baltes Development</title>
-            
-  </head>
-  <body> 
-        <section class="title clearfix">
-                <h1>Baltes Design &amp Development</h1>
-                <h3>Where science and art collide</h3>
-                <h3>Development: You can think it, you can build it</h3>
-            </section>
-            <header>
-                <div id= "mySidenav">
-                    <nav> 
-                        <ul>
-                            <li><a href="index.html" class="dev">Home</a></li> 
-                            <li><a href="development.html" class="dev">Code</a></li>                                                               
-                            <li><a href="design.html" class="art">Art</a></li>
-                            <li><a href="cartographypage.html" class="home">Mapping</a></li>
-                            <li><a href="blogpage.html" class="blog">Blog</a></li>
-                            <li><a href="aboutme.html" class="about">About Me</a></li>
-                            <li><a href="examples.html" class="about">.js Examples</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-<main>   
-    <div class="carosel-pos">       
-       <img class="mySlides" src="images/amokcode.PNG" height="400" width="80%">
-       <img class="mySlides" src="images/thymeLeaf.PNG" height="400" width="80%">
-       <img class="mySlides" src="images/reviewsite.PNG" height="400" width="80%">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/menu.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"  />
+    <title>Baltes Development</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="title">
+        <h1>Baltes Design &amp; Development</h1>
+        <h3>Development: You can think it, you can build it</h3>
+        <input id="burger" type="checkbox" hidden />
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="buttons">Home</a></li>
+                <li><a href="development.html" class="buttons">Code</a></li>
+                <li><a href="design.html" class="buttons">Art</a></li>
+                <li><a href="cartographypage.html" class="buttons">Mapping</a></li>
+                <li><a href="blogpage.html" class="buttons">Blog</a></li>
+                <li><a href="aboutme.html" class="buttons">About Me</a></li>
+                <li><a href="examples.html" class="buttons">.js Examples</a></li>
+            </ul>
+        </nav>
     </div>
-         <main>  
-            <section class="mainContainer clearfix">
-                <h3 class="help"> Fortune Teller</h3>
-                  <img class="images" src="images/fortuneTeller.PNG" width="300" height="200"/>         
-                  <h3 class="para2"> Core Java Project</h3>
-                  <p class="para2">Technologies used: Variable Practice, Operators, Expressions, Conditionals, input, output, loops, switch cases. 
-                      Synopsis: Develop a console application that will tell the user’s fortune based on data received from the user.
-                      <p class="para2"> Visit the Repository at:    <a href="https://github.com/Retrojb/Fortune" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a> </p>
-                  </p>
-            </section> 
+</header>
+    <main id="main-adj">
+<div class="flex-main">
 
-            <section class="mainContainer clearfix">
-                <h3 class="help"> Virtual Pets</h3>
-                  <img class="images" src="images/amok.PNG" width="300" height="200"/>         
-                  <h3 class="para2"> Core Java Project: 3 Iterations</h3>
-                  <ol class="para2">
-                    <li>1st Iteration: Create 2 Classes, create 3 instances, 3 methods (including 1 game tick method), game should implement a 'game loop'.</li>
-                    <li>2nd Iteration: All the same conditions as the first plus ability to select 1 instance of an animal through Collections. Add and Remove animals.</li>
-                    <li>3rd Iteration: Same Condtions list above with addition of using A.P.I.E. .</li>
-                </ol> 
-                </section>   
+    <aside class="proj-list">
+            <h3>Project List:</h3>
+            <ul>
+                <li>Fortune Teller</li>
+                <li>Virtual Pet</li>
+                <li>Virtual Pet Shelter</li>
+                <li>Virtual Pets Amok</li>
+                <li>Brick Breaker</li>
+                <li>Review Site</li>
+                <li>Portfolio</li>
+                <li>Starwars Review-site</li>
+                <li>Bank Teller</li>
+                <li>Girl Scout Sales</li>
+                <li>Music Review Site</li>
+                <li>Login Controller</li>
+                <li>React Weather App</li>
+                <li>Minimalist Weather App</li>
+                <li>Angular App</li>
+                <li>MyMenu App</li>
+                <li>Time2Dine</li>
+                <li>Hayapp</li>
+            </ul>
+    </aside>
+            <span class="main-heading">
+            <h2>Project List:</h2>
+            <p>All projects can be found on my github <a href="github.com/retrojb">Retrojb</a></p>
+            </span>
 
-            <section class="mainContainer clearfix">
-                <h3 class="help"> Review Site</h3>
-                  <img class="images" src="images/reviewsite.PNG" width="300" height="200"/>         
-                  <p class="para2"> Core Java and Spring Boot to develop a inventory site </p>
-            </section>         
-            
-            <footer class="foot">
-                <span>
-                    <p>Baltes Cartography&copy;</p>
-                    <p><a href="index.html">Home</a></p>
-                    <p>
-                        <a href="https://twitter.com/JohnBaltes6" target="_blank"><img src="images/Twitter_bird_icon.png" class="zoom social-tags"></a>
-                        <a href="https://linkedin.com/in/john-baltes" target="_blank"><img src="images/linkedin.png" class="zoom social-tags"></a>
-                        <a href="https://www.instagram.com/baltez_me_gusta/" target="_blank"><img src="images/instagram_PNG3.png" class="zoom social-tags"></a>
-                        <a href="https://retrojb.tumblr.com/" target="_blank"><img src="images/Tumblr_icon.png" class="zoom social-tags"></a>
-                        <a href="https://github.com/Retrojb" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a>
-                        <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a></p>
-                    </span>
-                </footer>
-                <script src="./JS/app.js"></script>
-            </main>
-    </body>
-</html>
+            <div class="proj-container">
+
+                        <span class="proj-item">
+                            <h3>Virtual Pets</h3>
+                            <small>Core Java / OOP</small>
+                            <img src="./images/amok.PNG"> 
+                            <p>place holder</p>
+                            <p>
+                           
+                <b>1st Iteration:</b> Create 2 Classes, create 3 instances, 3 methods (including 1 game tick method), game should implement a 'game loop'.
+                  <b>  2nd Iteration:</b> All the same conditions as the first plus ability to select 1 instance of an animal through Collections. Add and Remove animals.
+                  <b>  3rd Iteration:</b> Same Condtions list above with addition of using A.P.I.E. 
+                </p>
+                        </span>
+
+                        <span class="proj-item">
+                                <img src="./images/amok.PNG"> 
+                                <p>place holder</p>
+                                <p>This website</p>
+                            </span>
+
+                            <span class="proj-item">
+                            <img src="./images/amok.PNG"> 
+                            <p>place holder</p>
+                            <p>This website</p>
+                        </span>
+                    
+                        <span class="proj-item">
+                                <img src="./images/amok.PNG"> 
+                                <p>place holder</p>
+                                <p>This website</p>
+                        </span>
+                        <span class="proj-item">
+                                <img src="./images/amok.PNG"> 
+                                <p>place holder</p>
+                                <p>This website</p>
+                            </span>
+                            <span class="proj-item">
+                                    <img src="./images/amok.PNG"> 
+                                    <p>place holder</p>
+                                    <p>This website</p>
+                                </span>
+                </div>  
+                
+</div>
+                <footer class="foot">
+                    <div>
+                        <h4>Baltes Cartography</h4>
+                        <small>2018</small>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="development.html">Code</a></li>
+                            <li><a href="design.html">Art</a></li>
+                            <li><a href="cartographypage.html">Mapping</a></li>
+                            <li><a href="blogpage.html">Blog</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                            <li><a href="examples.html">.js Examples</a></li>
+                        </ul>
+                    </div>
+                    <span>
+                        <a href="https://twitter.com/JohnBaltes6" target="_blank"><img src="images/Twitter_bird_icon.png"
+                            class="zoom social-tags"></a>
+                            <a href="https://linkedin.com/in/john-baltes" target="_blank"><img src="images/linkedin.png" class="zoom social-tags"></a>
+                            <a href="https://www.instagram.com/baltez_me_gusta/" target="_blank"><img src="images/instagram_PNG3.png"
+                                class="zoom social-tags"></a>
+                                <a href="https://retrojb.tumblr.com/" target="_blank"><img src="images/Tumblr_icon.png" class="zoom social-tags"></a>
+                                <a href="https://github.com/Retrojb" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a>
+                                <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a>
+                            </span>
+                        </footer>
+                    </main>
+                    <script src="./JS/app.js"></script>
+                    <script src="./JS/modal.js"></script>
+                </body>
+                
+                </html>
+                
+                
+                <!-- <div class="carousel-pos">
+                         <img class="mySlides" src="images/amokcode.PNG" height="400" width="80%">
+                         <img class="mySlides" src="images/thymeLeaf.PNG" height="400" width="80%">
+                         <img class="mySlides" src="images/reviewsite.PNG" height="400" width="80%">
+                     </div>  -->

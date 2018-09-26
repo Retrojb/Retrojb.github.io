@@ -297,8 +297,15 @@ body.modal-open #modal-screen{
     padding: 1rem;
     
 }
-.para{
+.hero-img{
+    background-image: url('/images/code-header.jpeg');
+    background-repeat: no-repeat;
+            
+    position: relative;        
+    width: 85%;            
+    height: 610px;    
     
+
   }
 .para2{
     text-align: center;

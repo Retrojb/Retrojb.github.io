@@ -16,7 +16,6 @@
     color:white;
     padding-left: 1.5rem;
     box-shadow:   0 4px 8px 0 lightgray;
-
   }  
 .title h1{
     font-size: 40px;
@@ -28,7 +27,6 @@
     font-family: 'Bungee', cursive;
     font-weight: 100;
 }
-
 
 /* Main Body */
 
@@ -142,7 +140,7 @@ a:hover, a:active{
 .inner-text{
     padding: 0 18px;
     display: none;
-    overflow: hidden;   
+    overflow:scroll;   
 }
 .active .collapse:hover{
     background-color: antiquewhite;
@@ -193,7 +191,7 @@ a:hover, a:active{
 
 
 
-/* find there homes */
+/* find te homes */
 .zoom{
     transition: transfom .9s ease;
 }
@@ -221,4 +219,47 @@ a:hover, a:active{
     padding: 1rem;
 }
 
+.flex-main{
+    border:5px solid rebeccapurple;
+    display: block;
+}
+.proj-list{
+    height: 100%;
+    position: fixed;
+    width:150px;
+    border: 3px solid fuchsia;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+.main-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    height: 120px;
+    border: 4px tomato solid;
+    margin-left: 150px;
+}
+.proj-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    border: 4px khaki solid;
+    margin-left: 150px;
+    
+}
+
+.proj-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px green dashed;
+    width: 30%;
+}
+.proj-item img{
+    width: 300px;
+    height: 300px;
+}
 

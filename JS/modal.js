@@ -10,4 +10,4 @@
   closeModalBtn.addEventListener('click', function(){
       let modalScreen = document.getElementById('modal-screen');
       modalScreen.style.display = 'none';
-  });
+
