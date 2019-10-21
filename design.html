@@ -2,33 +2,40 @@
 <html>
     <head>
         <meta charset="utf-8">
-            <meta content="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./CSS/layout.css"  />
-            <link rel="stylesheet" href="./CSS/style.css"  />
-            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
+            <meta content="viewport" content="width=device-width, initial-scale=1.0">    
+            <link rel="stylesheet" href="./CSS/layout.css" />
+            <link rel="stylesheet" href="./CSS/style.css" />
+            <link rel="stylesheet" href="./CSS/menu.css" />
+            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"  />
             <title>Baltes Art &amp; Design</title>   
 </head>
+
 <body>
-    <section class="title clearfix">
-        <h1>Baltes Design &amp Development</h1>
-        <h3>Where science and art collide</h3>
-        <h3>Art: Freedom in design</h3>
-    </section>
-    <header>
-            <div id= "mySidenav">
-                <nav> 
-                    <ul>
-                        <li><a href="index.html" class="home">Home</a></li>
-                        <li><a href="design.html" class="art">Art</a></li>
-                        <li><a href="development.html" class="dev">Code</a></li>                                
-                        <li><a href="cartographypage.html" class="art">Mapping</a></li>
-                        <li><a href="blogpage.html" class="blog">Blog</a></li>
-                        <li><a href="aboutme.html" class="about">About Me</a></li>
-                        <li><a href="examples.html" class="about">.js Examples</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <header>
+                <div class="title">
+                        <h1>Baltes Design &amp Development</h1>
+                        <h3>Where science and art collide</h3>
+                        <h3>Art: Freedom in design</h3>
+                    <input id="burger" type="checkbox" hidden />
+                    <label for="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html" class="buttons">Home</a></li>
+                            <li><a href="development.html" class="buttons">Code</a></li>
+                            <li><a href="design.html" class="buttons">Art</a></li>
+                            <li><a href="cartographypage.html" class="buttons">Mapping</a></li>
+                            <li><a href="blogpage.html" class="buttons">Blog</a></li>
+                            <li><a href="aboutme.html" class="buttons">About Me</a></li>
+                            <li><a href="examples.html" class="buttons">.js Examples</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
     <main>        
     <div class="carosel-pos">       
         <img class="mySlides" src="images/mario2.jpg" height="400" width="80%">

@@ -306,7 +306,18 @@ body.modal-open #modal-screen{
     height: 610px;    
     
 
-  }
+}
+
+.para{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left:10%;
+    padding-right: 10%;
+    overflow: auto; 
+    margin-bottom: 6rem;
+}
+
 .para2{
     text-align: center;
     padding-top: 1%;

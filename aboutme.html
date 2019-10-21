@@ -1,33 +1,41 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta content="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./CSS/style.css"  />
-        <link rel="stylesheet" href="./CSS/layout.css"  />
-        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
-        <title>About Me</title>
-    </head>
-    
-    <body>   
-    <span class="title clearfix">
-        <h1>Baltes Design &amp Development</h1>
-        <h3>Where science and art collide</h3>
-    </span>
+<head>
+    <meta charset="utf-8">
+    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css"  />
+    <link rel="stylesheet" href="./CSS/layout.css"  />
+    <link rel="stylesheet" href="./CSS/menu.css" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"  />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
+    <title>About Me</title>
+</head>    
+<body>   
     <header>
-            <div id= "mySidenav">
-                <nav> 
-                    <ul>
-                        <li><a href="index.html" class="home">Home</a></li>
-                        <li><a href="development.html" class="dev">Code</a></li>                                
-                        <li><a href="cartographypage.html" class="art">Mapping</a></li>
-                        <li><a href="blogpage.html" class="blog">Blog</a></li>
-                        <li><a href="aboutme.html" class="about">About Me</a></li>
-                        <li><a href="examples.html" class="blog">.js examples</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <div class="title">
+            <h1>Baltes Design &amp Development</h1>
+            <h3>Where science and art collide</h3>
+        <input id="burger" type="checkbox" hidden />
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="buttons">Home</a></li>
+                    <li><a href="development.html" class="buttons">Code</a></li>
+                    <li><a href="design.html" class="buttons">Art</a></li>
+                    <li><a href="cartographypage.html" class="buttons">Mapping</a></li>
+                    <li><a href="blogpage.html" class="buttons">Blog</a></li>
+                    <li><a href="aboutme.html" class="buttons">About Me</a></li>
+                    <li><a href="examples.html" class="buttons">.js Examples</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main id="main-adj" >
     <div class="carosel-pos">       
         <img class="mySlides" src="images/alexisshoes.jpg" height="400" width="80%">
         <img class="mySlides" src="images/amokcode.PNG" height="400" width="80%">
@@ -37,10 +45,44 @@
        <img class="mySlides" src="images/surveyor.jpg" height="400" width="80%">
     </div>
     
-    <article>
+    <article class="para">
+        <h3>Welcome to Baltes Design and Development. My name is John Baltes</h3>
+        <h5>I currently work for Nationwide Insurance in Columbus Ohio as fullstackweb developer</h5>
         <p class="para">
-            Welcome to Baltes Design and Development. My name is John Baltes
-            I am currently a Junior Web Developer and Certified Cartographer. A little 
+            <p>At Nationwide I have worked on multiple teams, with multiple technologies and platforms
+                Nationwide Mobile: Money movement and bill payment.
+                    <p>My work on this has greatly impacted the everyday user who pays their Nationwide policy via the mobile or web app</p>
+                        <li>Angular 5</li>
+                        <li>Ionic 3</li>
+                        <li>Cordova</li>
+                        <li>Splunk and Google Analytics</li>
+            </p>
+            <p> Nationwide Internal HR / IT Resource management application
+                an internal application that helps teams and management track resources, teams, devops metrics, and other Nationwide IT information.
+                <h4> Poly Skilled in Testing, Development, Requirements and Continous Intergration Model</h4>
+                <li>Angular 7</li>
+                <li>Java 8</li>
+                <li>AWS</li>
+                <li>Splunk Metrics</li>
+                <li>Docker and Kuberneties</li>
+                <li>Jira and RTC</li>
+                <li>Postgres</li>
+                <li>Concourse CI</li>
+            </p>
+            <p> Nationwide Information Risk Management 
+                <li>Angular</li>
+                <li>Oauth 2 / odic</li>
+                <li>Microsoft Azure</li>
+            </p>
+
+            <h3>Some more about me</h3>
+            <p>From a technology standpoint I am a lover of CLI over GUI, I perfer VScode for front end and Jet Brains Suite for backend development
+                I love to learn about new front end frame works such as React, Gatsby and Vue.
+                In my personal time I have been expanding my knowledge in Kotlin and Mongo DB. 
+                I perfer NoSQL over RMS DB
+            </p>
+            <p> I currently volunteer my time with Tech Corp to mentor the youth about IT through after school classes and Hackathons</p>
+            A little 
             bit about myself, I gained my Associates degree in Geography and a certificate
             in GIS from Sinclair Community College in Dayton, Oh in 2016. I moved to 
             Columbus to continue my education at Ohio State University, where I have studied
@@ -50,9 +92,9 @@
         </p> 
     </article>
   
-</main>
 
-<footer class="foot">
+
+<footer class="feets foot">
         <div>
             <h4>Baltes Cartography</h4>
             <small>2018</small>
@@ -78,6 +120,7 @@
             <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a>
         </span>
     </footer>
+</main>
         <script src="./JS/app.js"></script>
     </body> 
 </html>
