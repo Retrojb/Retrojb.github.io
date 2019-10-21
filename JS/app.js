@@ -2,6 +2,7 @@
 let slideIndex = 0;
 carousel();
 
+
 function carousel() {
     let i;
     let x = document.getElementsByClassName("mySlides");
@@ -14,6 +15,8 @@ function carousel() {
     setTimeout(carousel, 3000); 
 };
 
+
+function collapse() {
 let coll = document.getElementsByClassName("collapse");
 let i;
 
@@ -28,4 +31,5 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
+}
+ collapse();

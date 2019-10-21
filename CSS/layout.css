@@ -161,17 +161,18 @@
     padding: 2rem;
 }
 .collapse{
-    border: blue 3px dashed;
- 
+    padding: 2rem;
+    border: hotpink 3px dashed;
+    margin: 2rem;
+    content: hidden;
 }
-.collapsible:after {
+.collapse:after {
     content: "\002B";/* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: black;
     float: right;
     margin-left: 5px;
     border: blue 3px dashed;
-
 }
 
 .active:after {
@@ -337,7 +338,6 @@ body.modal-open #modal-screen{
     padding-bottom: 1%;
     padding-left:10%;
     padding-right: 10%;
-    overflow: auto; 
     margin-bottom: 6rem;
 }
 
@@ -347,8 +347,7 @@ body.modal-open #modal-screen{
     padding-bottom: 1%;
     padding-left:10%;
     padding-right: 10%;
-    overflow: auto;
-  }
+}
 
 
 
