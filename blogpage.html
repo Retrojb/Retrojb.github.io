@@ -3,56 +3,61 @@
     <head>
         <meta charset="utf-8">
             <meta content="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./CSS/style.css"  />
-            <link rel="stylesheet" href="./CSS/layout.css"  />
-            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
-            
+            <link rel="stylesheet" href="./CSS/layout.css" />
+            <link rel="stylesheet" href="./CSS/style.css" />
+            <link rel="stylesheet" href="./CSS/menu.css" />
+            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"  />
             <title>Baltes Cartography</title>   
 </head>
 <body>
-        <span class="title clearfix">
-                <h1>Baltes Design &amp Development</h1>
-                <h3>Where science and art collide</h3>
-                <h3>Blog: Where I let the words flow</h3>
-        </span>
-        <header>
-                <div id= "mySidenav">
-                    <nav> 
-                        <ul>
-                            <li><a href="index.html" class="home">Home</a></li>
-                            <li><a href="development.html" class="dev">Code</a></li>                                
-                            <li><a href="design.html" class="art">Art</a></li>
-                            <li><a href="blogpage.html" class="blog">Blog</a></li>
-                            <li><a href="aboutme.html" class="about">About Me</a></li>
-                            <li><a href="examples.html" class="about">.js Examples</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-<main>
-    
-
-    <section class="mainContainer clearfix">
-        <h4 class="help">My First Blog</h4>      
-                   
-          <p class="para2"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>                     
-      </section>
-</main>
-
-<footer class="foot">
-        <section>
-          <p>Baltes Cartography&copy</p>
-          <p><a href="index.html">Home</a></p>
-          
-          <p>
-            <a href="https://twitter.com/JohnBaltes6" target="_blank"><img src="images/Twitter_bird_icon.png" class="zoom social-tags"></a>
-        <a href="https://linkedin.com/in/john-baltes" target="_blank"><img src="images/linkedin.png" class="zoom social-tags"></a>
-    <a href="https://www.instagram.com/baltez_me_gusta/" target="_blank"><img src="images/instagram_PNG3.png" class="zoom social-tags"></a>
-    <a href="https://retrojb.tumblr.com/" target="_blank"><img src="images/Tumblr_icon.png" class="zoom social-tags"></a>
-        <a href="https://github.com/Retrojb" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a></p>
-        <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a></p>
+    <header>
+            <div class="title">
+                    <h1>Baltes Design &amp Development</h1>
+                    <h3>Where science and art collide</h3>
+                    <h3>Art: Freedom in design</h3>
+                <input id="burger" type="checkbox" hidden />
+                <label for="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="buttons">Home</a></li>
+                        <li><a href="development.html" class="buttons">Code</a></li>
+                        <li><a href="design.html" class="buttons">Art</a></li>
+                        <li><a href="cartographypage.html" class="buttons">Mapping</a></li>
+                        <li><a href="blogpage.html" class="buttons">Blog</a></li>
+                        <li><a href="aboutme.html" class="buttons">About Me</a></li>
+                        <li><a href="examples.html" class="buttons">.js Examples</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+<main id="main-adj" >     
+    <section class="art-container" style="padding:5rem; justify-content:center;">
+            <span class="art-box" >
+                
+        <img src="images/underconstruction.gif" alt="under construction pickachu" width="550" height="350" />                 
+    </span>
     </section>
-    </footer>
+      
+      <footer class="foot feets">
+          <section>
+              <p>Baltes Cartography&copy</p>
+              <p><a href="index.html">Home</a></p>
+              
+              <p>
+                  <a href="https://twitter.com/JohnBaltes6" target="_blank"><img src="images/Twitter_bird_icon.png" class="zoom social-tags"></a>
+                  <a href="https://linkedin.com/in/john-baltes" target="_blank"><img src="images/linkedin.png" class="zoom social-tags"></a>
+                  <a href="https://www.instagram.com/baltez_me_gusta/" target="_blank"><img src="images/instagram_PNG3.png" class="zoom social-tags"></a>
+                  <a href="https://retrojb.tumblr.com/" target="_blank"><img src="images/Tumblr_icon.png" class="zoom social-tags"></a>
+                  <a href="https://github.com/Retrojb" target="_blank"><img src="images/github-sociocon.png" class="zoom social-tags"></a></p>
+                  <a href="https://codepen.io/Retrojb/" target="_blank"><img src="images/codepen.png" class="zoom social-tags"></a></p>
+                </section>
+            </footer>
+        </main>
+    </body>
     <script src="./JS/app.js"></script>
-  </body>
 </html>

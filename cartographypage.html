@@ -3,90 +3,79 @@
     <head>
         <meta charset="utf-8">
             <meta content="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./CSS/style.css"  />
-            <link rel="stylesheet" href="./CSS/layout.css"  />
-            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"  />
+            <link rel="stylesheet" href="./CSS/layout.css" />
+            <link rel="stylesheet" href="./CSS/style.css" />
+            <link rel="stylesheet" href="./CSS/menu.css" />
+            <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"  />
             <title>Baltes Cartography</title>   
 </head>
 <body>
-        <span class="title clearfix">
+    <header>
+        <div class="title">
                 <h1>Baltes Design &amp Development</h1>
                 <h3>Where science and art collide</h3>
                 <h3>Cartography: The Art &amp; Science of map making</h3>
-        </span>
-            <header>
-                <div id= "mySidenav">
-                    <nav> 
-                        <ul>
-                            <li><a href="index.html" class="home">Home</a></li>
-                            <li><a href="development.html" class="dev">Code</a></li>                                
-                            <li><a href="design.html" class="art">Art</a></li>
-                            <li><a href="blogpage.html" class="blog">Blog</a></li>
-                            <li><a href="aboutme.html" class="about">About Me</a></li>
-                            <li><a href="examples.html" class="about">.js Examples</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <div class="carosel-pos">       
-                    <img class="mySlides" src="images/kent.jpg" height="400" width="80%">
-                    <img class="mySlides" src="images/hereandgone.jpg" height="400" width="80%">
-                    <img class="mySlides" src="images/Precipitation revised with hurricane buffer.jpg" height="400" width="80%">
-                    <img class="mySlides" src="images/Zoom of the areas with greater then 10in.jpg" height="400" width="80%"> 
-                    <img class="mySlides" src="images/total populationreviseone.jpg" height="400" width="80%">
-                    <img class="mySlides" src="images/social vulnerbility.jpg" height="400" width="80%">
-                    <img class="mySlides" src="images/tddgis.jpg" height="400" width="80%">
-                </div>
-    <section class="mainContainer clearfix"> 
-        <h3 class="help"> Social vulnerability after Hurricane Katrina</h3>
-        <h5 class="help">Click the Picture for more information</h5>
-        <button id="open-modal"class="images">
+            <input id="burger" type="checkbox" hidden />
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="buttons">Home</a></li>
+                    <li><a href="development.html" class="buttons">Code</a></li>
+                    <li><a href="design.html" class="buttons">Art</a></li>
+                    <li><a href="cartographypage.html" class="buttons">Mapping</a></li>
+                    <li><a href="blogpage.html" class="buttons">Blog</a></li>
+                    <li><a href="aboutme.html" class="buttons">About Me</a></li>
+                    <li><a href="examples.html" class="buttons">.js Examples</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-adj">
+    <!-- <div class="carosel-pos">       
+        <img class="mySlides" src="images/kent.jpg" height="400" width="80%">
+        <img class="mySlides" src="images/hereandgone.jpg" height="400" width="80%">
+        <img class="mySlides" src="images/Precipitation revised with hurricane buffer.jpg" height="400" width="80%">
+        <img class="mySlides" src="images/Zoom of the areas with greater then 10in.jpg" height="400" width="80%"> 
+        <img class="mySlides" src="images/total populationreviseone.jpg" height="400" width="80%">
+        <img class="mySlides" src="images/social vulnerbility.jpg" height="400" width="80%">
+        <img class="mySlides" src="images/tddgis.jpg" height="400" width="80%">
+    </div> -->
+    <section class="art-container"> 
+        <span class="art-box">
+            <h3 class="art-title"> Social vulnerability <br/>after Hurricane Katrina</h3>
             <img class="images" src="images/social vulnerbility.jpg" width="300" height="200"/>         
-        </button>
-            <div id="modal-screen">
-                <button id="close-modal" class="buttons-exit">X</button>
-                <img class="images-modal" src="images/social vulnerbility.jpg" width="300" height="200"/>
-                <div id="modal-box">
-                    <button class="collapse">Read More</button>
-                    <div class="inner-text"> 
-                    <p class="para2"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-                </div>
-                </div>
-            </div> 
-        </section>                     
- 
-</section>
-
-    <section class="mainContainer clearfix">
-      <h4 class="help"> Walkability Project</h4>
-        <img class="images" src="images/residential study area.jpg" width="300" height="200"/>         
-        <button class="collapse">Read More</button>
-        <div class="inner-text">
-        <p class="para2"> What is the overall objective of the project? 
-            The purpose of the project is to assess the walkability of a section of downtown Dayton.
-            This project will require that students complete a project using the GIS workflow.   
-            The project will be divided into these phases and each phase will focus on key deliverables.
-            The deliverables will be completed by either an individual student, team, or the class.  
-        </p>
-    </div>
-    </section>                     
-         
-    <section class="mainContainer clearfix">
-      <h4 class="help">Wright Dunbar Service Learning Project</h4>      
-        <img class="images" src="images/Dunbar Age of House FINAL COPY.jpg"  width="300" height="200"/>         
-        <p class="para2"> Service Learning project done at Sinclair Community College. The concept was to map unique characteristics in the Historical Wright Dunbar Neighborhod, Fall of 2015 </p>                     
+        </span>  
+        <span class="art-box">
+            <h3 class="art-title"> Walkability Project</h3>
+            <img class="images" src="images/residential study area.jpg" width="300" height="200"/>         
+            <p class="para2"> What is the overall objective of the project? 
+                <br/>The purpose of the project is to assess the walkability of a section of downtown Dayton.
+                <br/>This project will require that students complete a project using the GIS workflow.   
+                <br/>The project will be divided into these phases and each phase will focus on key deliverables.
+                <br/>The deliverables will be completed by either an individual student, team, or the class.  
+            </p>
+        </span>                     
+        <span class="art-box">
+            <h3 class="art-title">Wright Dunbar Service<br/> Learning Project</h3>      
+            <img class="images" src="images/Dunbar Age of House FINAL COPY.jpg"  width="300" height="200"/>         
+            <p class="para2"> Service Learning project done at Sinclair Community College.
+                <br/> The concept was to map unique characteristics in the 
+                <br/>Historical Wright Dunbar Neighborhod, Fall of 2015 </p>                     
+        </span>
+        <span class="art-box">
+            <h3 class="art-title">3D rendering fly thru of OSU</h3>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ukH2uMqcwzE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            <p class="para2">Using Arc Scene to create a 3D landscape and fly through</p>
+        </span>
     </section>
-
-    <section class="mainContainer clearfix">
-        <h4 class="help">3D rendering fly thru of OSU</h4>
-        <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ukH2uMqcwzE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
-        <p class="para2">USing Arc Scene to create a 3D landscape and fly through</p>
-    </div>
-    </section >
     
-    <footer class="foot">
+    <footer class="feets foot">
         <span>
             <p>Baltes Cartography&copy;</p>
             <p><a href="index.html">Home</a></p>      
