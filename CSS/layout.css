@@ -140,14 +140,13 @@
 }
 
 .art-container {
-    border: yellow solid 4px;
     display: flex;
+    flex:1;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .art-box{
-    border: blue 3px dashed;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -163,7 +162,6 @@
 
 .collapse{
     padding: 2rem;
-    border: hotpink 3px dashed;
     margin: 2rem;
     content: hidden;
 }
@@ -340,6 +338,37 @@ body.modal-open #modal-screen{
     padding-left:10%;
     padding-right: 10%;
     margin-bottom: 6rem;
+}
+
+.about-me {
+    display:flex;
+    flex-direction: row;
+}
+.about-me-main {
+    margin-bottom: 8px;
+}
+
+.about-me-main h1 {
+    font-size: 40px;
+    padding: 1rem;
+}
+.work-desc {
+    flex: 1;
+    margin:1.5rem;
+    padding: 1.5rem;
+}
+
+.work-desc h3 {
+    font-size: 26px;
+}
+
+.work-desc h5 {
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+.work-desc ul {
+    padding-left: 20px;
 }
 
 .para2{

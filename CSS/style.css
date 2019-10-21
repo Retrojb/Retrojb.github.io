@@ -165,32 +165,34 @@ a:hover, a:active{
 /* Footer */
 
 .foot{
-    height: 300px;
+    background-color: 37135b;
     display: flex;
-    color: white;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 300px;
+    color: white;
 }
 .foot ul{
     display: flex;
-    max-height: 120px;
-    max-width: 200px;
-    flex-flow: column wrap;
+    flex-direction: row;
     list-style: none;  
-    line-height: 30px;  
-    font-size: 24px; 
+    font-size: 32px; 
+}
+.foot ul li {
+    margin:25px;
 }
 .foot ul:hover{
     background-color: none;
+}
+.foot h4 {
+    margin-top: 10px;
 }
 .social-tags{
     width: 60px;
     height: 60px;
     padding: .3rem;
-}
-
-.feets {
-    background-color: 37135b;
+    margin: .5rem;
 }
 
 
