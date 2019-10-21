@@ -43,7 +43,7 @@
   }
   .btn:after{
     content:'';
-    postion: absolute;
+    position: absolute;
     left:55%;
    
     
